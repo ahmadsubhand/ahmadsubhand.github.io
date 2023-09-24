@@ -34,7 +34,7 @@
 .profileImg .img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* Github, IG, Linkedlin */
@@ -156,6 +156,9 @@ header {
 nav {
   display: none;
 }
+.fullNav {
+  display: none;
+}
 .headNav {
   height: 68px;
   padding: 16px;
@@ -257,6 +260,11 @@ nav {
 
 /* Hero */
 .hero {
+  gap: 48px;
+}
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
   gap: 48px;
 }
 
@@ -643,4 +651,196 @@ footer i {
 }
 .darkMode .white3 {
   color: var(--gray-dark-700, #E5E7EB);
+}
+
+/* Responsive */
+@media only screen and (min-width: 995px) {
+  /* Padding Every Section */
+  header {
+    padding: 16px 112px;
+  }
+  .container {
+    padding: 96px 112px;
+  }
+  footer p {
+    padding: 24px 112px;
+  }
+
+  /* Setting New Navigation */
+  .headRight {
+    display: none;
+  }
+  .fullNav {
+    display: flex;
+  }
+  .fullNav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    margin-right: 48px;
+    list-style: none;
+  }
+  .fullNav ul a {
+    color: var(--gray-600, #4B5563);
+    display: block;
+    width: 100%;
+    /* Body2/Medium - All */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  .fullNav ul a:hover {
+    text-decoration: underline;
+  }
+  .fullNav button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: var(--gray-900, #111827);
+    background: #fff;
+    font-size: 24px;
+    margin: 6px;
+    margin-right: 16px;
+  }
+  .fullNav #sun {
+    display: block;
+  }
+  .fullNav #night {
+    display: none;
+  }
+  .darkMode .fullNav #sun {
+    display: none;
+  }
+  .darkMode .fullNav #night {
+    display: block;
+  }
+  .fullNav > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--gray-50, #F9FAFB);
+    text-align: center;
+    /* Body2/Medium - All */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    padding: 6px 16px;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--gray-900, #111827);
+  }
+  .darkMode .fullNav > a {
+    background: var(--gray-dark-900, #F9FAFB);
+    color: var(--gray-dark-default, #030712);
+  }
+  .fullNav > a:hover {
+    box-shadow:inset 0px 0px 0px 1px var(--gray-900, #111827);
+    color: var(--gray-900, #111827);
+    background: #fff;
+  }
+  .darkMode .fullNav > a:hover {
+    box-shadow:inset 0px 0px 0px 1px var(--gray-dark-900, #F9FAFB);
+    color: var(--gray-dark-900, #F9FAFB);
+    background: var(--gray-dark-default, #030712);
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .hero .profileImg {
+    min-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .hero .profileImg .img {
+    width: 280px;
+    height: 320px;
+    position: static;
+    transform: none;
+    transform: translateX(-30px);
+  }
+  .hero .profileImg::after {
+    width: 260px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    top: 30px;
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+
+  /* About */
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 172px;
+    gap: 48px;
+  }
+  .about .aboutMe {
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .about .aboutMe .label {
+    position: absolute;
+    top: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about .profileImg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .about .profileImg .img {
+    width: 400px;
+    height: 480px;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: -25px;
+    transform: none;
+  }
+  .about .profileImg::after {
+    width: 390px;
+    height: 460px;
+    position: static;
+    transform: none;
+    transform: translateY(35px);
+  }
+  .about .aboutMore {
+    max-width: 45%;
+  }
+
+  /* Experience and Project */
+  .experience, .projects {
+    gap: 48px;
+  }
+  .project {
+    display: flex;
+    flex-direction: row;
+  }
+  .projectPic {
+    border-radius: 12px 0 0 12px;
+  }
+  .projectPic img {
+    width: 384px;
+    height: 100%;
+  }
+  .projectDesc {
+    justify-content: space-around;
+    border-radius: 0 12px 12px 0;
+  }
 }
