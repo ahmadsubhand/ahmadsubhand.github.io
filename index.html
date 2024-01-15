@@ -238,14 +238,36 @@
               </div>
               <div class="c_2">
                 A portofolio website to complete one of the tasks in a series of Pekan Ilkomerz batch 59, or commonly
-                known as student orientation before entering departement of Computer Science in IPB University
+                known as student orientation before entering departement of Computer Science in IPB University.
               </div>
               <div class="projects_tag">
-                <span class="tag">HTML</span> 
+                <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
               </div>
               <div>
                 <a href="portofolio-pi59"><i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="projects_content_top bg_3">
+              <img src="assets/project02.webp">
+            </div>
+            <div class="projects_content_bot bg_1">
+              <div class="c_1">
+                MyTODO
+              </div>
+              <div class="c_2">
+                A todolist website where you can add, remove, or mark done the task. This website was created as an
+                implementation of local storage.
+              </div>
+              <div class="projects_tag">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div>
+                <a href="mytodo"><i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
               </div>
             </div>
           </li>
@@ -256,30 +278,34 @@
     <section class="contact padding bg_1" id="contact">
       <div class="heading c_2">
         <span class="tag">Get in touch</span>
-        What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.
+        What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to
+        connect.
       </div>
       <div class="contact_mid">
         <div class="c_1">
           <i class="fa-solid fa-envelope icon-new icon-nt"></i>
           <span>asdcode123@gmail.com</span>
-          <i class="fa-solid fa-copy icon-new icon copy" onmouseover="text(this)" onclick="copy(this)"> 
-            <span class="c_2 bg_3"></span> 
+          <i class="fa-solid fa-copy icon-new icon copy" onmouseover="text(this)" onclick="copy(this)">
+            <span class="c_2 bg_3"></span>
           </i>
         </div>
         <div class="c_1">
           <i class="fa-solid fa-phone icon-new icon-nt"></i>
           <span>+62895331741078</span>
-          <i class="fa-solid fa-copy icon-new icon copy" onmouseover="text(this)" onclick="copy(this)"> 
-            <span class="c_2 bg_3"></span> 
+          <i class="fa-solid fa-copy icon-new icon copy" onmouseover="text(this)" onclick="copy(this)">
+            <span class="c_2 bg_3"></span>
           </i>
         </div>
       </div>
       <div class="contact_bot">
         <div class="c_2">You may also find me on these platforms!</div>
         <div>
-          <a href="https://github.com/ahmadsubhand" target="_blank"><i class="fa-brands fa-github white1 hover icon" aria-hidden="true"></i></a>
-          <a href="https://instagram.com/ahmadsubhand" target="_blank"><i class="fa-brands fa-instagram white1 hover icon" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/ahmad-subhan-daryhadi-37b559248/" target="_blank"><i class="fa-brands fa-linkedin white1 hover icon" aria-hidden="true"></i></a>
+          <a href="https://github.com/ahmadsubhand" target="_blank"><i class="fa-brands fa-github white1 hover icon"
+              aria-hidden="true"></i></a>
+          <a href="https://instagram.com/ahmadsubhand" target="_blank"><i
+              class="fa-brands fa-instagram white1 hover icon" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/ahmad-subhan-daryhadi-37b559248/" target="_blank"><i
+              class="fa-brands fa-linkedin white1 hover icon" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -312,11 +338,11 @@
       }
     }
 
-    function text(x) { 
+    function text(x) {
       x.firstElementChild.textContent = 'Copy';
     }
 
-    function copy(x) { 
+    function copy(x) {
       navigator.clipboard.writeText(x.previousElementSibling.textContent);
       x.firstElementChild.textContent = 'Copied!';
     }
