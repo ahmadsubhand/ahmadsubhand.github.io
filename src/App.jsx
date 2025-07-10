@@ -345,7 +345,7 @@ function Projects() {
     },
     {
       name: 'IngetAnime',
-      src: 'ingetanime.png',
+      src: 'ingetanime.webp',
       alt: 'ingetanime',
       desc: 'IngetAnime is a platform that helps users discover where to watch anime legally. It features an anime airing schedule (timeline), comprehensive anime exploration, and personalized tracking synced with MyAnimeList. This project was developed independently as part of my personal learning journey. The frontend was built using React with Vite, Material UI for ready-made components, and TailwindCSS for custom styling. The backend was developed using Express.js, Prisma ORM, and PostgreSQL, focusing on scalable API design and clean database management.',
       tags: ['React', 'TailwindCSS', 'Material UI', 'Express.js', 'Prisma ORM', 'PostgreSQL', 'Google OAuth', 'MyAnimeList'],
