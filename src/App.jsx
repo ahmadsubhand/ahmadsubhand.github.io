@@ -343,12 +343,21 @@ function Projects() {
       href: 'https://airhopper.padek.tech/',
       github: 'https://github.com/AirHopper/'
     },
+    {
+      name: 'IngetAnime',
+      src: 'ingetanime.png',
+      alt: 'ingetanime',
+      desc: 'IngetAnime is a platform that helps users discover where to watch anime legally. It features an anime airing schedule (timeline), comprehensive anime exploration, and personalized tracking synced with MyAnimeList. This project was developed independently as part of my personal learning journey. The frontend was built using React with Vite, Material UI for ready-made components, and TailwindCSS for custom styling. The backend was developed using Express.js, Prisma ORM, and PostgreSQL, focusing on scalable API design and clean database management.',
+      tags: ['React', 'TailwindCSS', 'Material UI', 'Express.js', 'Prisma ORM', 'PostgreSQL', 'Google OAuth', 'MyAnimeList'],
+      href: 'https://ingetanime.netlify.app',
+      github: 'https://github.com/IngetAnime'
+    }
   ]
   return (
     <ul className="flex flex-col flew-wrap gap-6 lg:gap-12">
       {projects.map((project, key) => (
-        <li className="overflow-hidden rounded-xl shadow-md lg:flex lg:even:flex-row-reverse" key={key}>
-          <div className="w-full h-64 p-8 bg-gray-200 dark:bg-[#374151] lg:p-12 lg:h-120 ">
+        <li className="overflow-hidden rounded-xl shadow-md lg:flex lg:even:flex-row-reverse bg-gray-200 dark:bg-[#374151]" key={key}>
+          <div className="w-full h-64 p-8 lg:p-12 lg:h-120 ">
             <img src={project.src} alt={project.alt} className="w-full h-full object-cover rounded-xl drop-shadow-lg"/>
           </div>
 
