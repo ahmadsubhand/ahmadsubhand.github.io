@@ -71,9 +71,9 @@ function Header({ isDark }) {
                 <i className="fa-solid fa-circle-half-stroke"></i>
               </Button>
             </div>
-            <button className="w-full py-1.5 px-4 rounded-xl bg-gray-900 text-gray-50 font-medium text-base hover:bg-gray-700 active:bg-gray-800 cursor-pointer dark:text-[#111827] dark:bg-[#F9FAFB] dark:hover:bg-[#E5E7EB] dark:active:bg-[#F3F4F6]">
+            <a href="/cv.pdf" className="w-full py-1.5 px-4 rounded-xl bg-gray-900 text-gray-50 font-medium text-base hover:bg-gray-700 active:bg-gray-800 cursor-pointer dark:text-[#111827] dark:bg-[#F9FAFB] dark:hover:bg-[#E5E7EB] dark:active:bg-[#F3F4F6]">
               Download CV
-            </button>
+            </a>
           </div>
         </div>
       </nav>
